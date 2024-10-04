@@ -11,7 +11,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.greenAccent,
-        body: SafeArea(
+        body: DecoratedBox(
+          decoration: BoxDecoration(
+            image: DecorationImage(image: AssetImage('image/background.gif'),
+            fit: BoxFit.cover
+            ),
+          ),
             child:Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
